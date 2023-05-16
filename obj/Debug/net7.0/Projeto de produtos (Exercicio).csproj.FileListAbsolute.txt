@@ -1,0 +1,15 @@
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Projeto de produtos (Exercicio)\bin\Debug\net7.0\Projeto de produtos (Exercicio).exe
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Projeto de produtos (Exercicio)\bin\Debug\net7.0\Projeto de produtos (Exercicio).deps.json
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Projeto de produtos (Exercicio)\bin\Debug\net7.0\Projeto de produtos (Exercicio).runtimeconfig.json
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Projeto de produtos (Exercicio)\bin\Debug\net7.0\Projeto de produtos (Exercicio).dll
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Projeto de produtos (Exercicio)\bin\Debug\net7.0\Projeto de produtos (Exercicio).pdb
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Projeto de produtos (Exercicio)\obj\Debug\net7.0\Projeto de produtos (Exercicio).csproj.AssemblyReference.cache
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Projeto de produtos (Exercicio)\obj\Debug\net7.0\Projeto de produtos (Exercicio).GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Projeto de produtos (Exercicio)\obj\Debug\net7.0\Projeto de produtos (Exercicio).AssemblyInfoInputs.cache
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Projeto de produtos (Exercicio)\obj\Debug\net7.0\Projeto de produtos (Exercicio).AssemblyInfo.cs
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Projeto de produtos (Exercicio)\obj\Debug\net7.0\Projeto de produtos (Exercicio).csproj.CoreCompileInputs.cache
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Projeto de produtos (Exercicio)\obj\Debug\net7.0\Projeto de produtos (Exercicio).dll
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Projeto de produtos (Exercicio)\obj\Debug\net7.0\refint\Projeto de produtos (Exercicio).dll
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Projeto de produtos (Exercicio)\obj\Debug\net7.0\Projeto de produtos (Exercicio).pdb
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Projeto de produtos (Exercicio)\obj\Debug\net7.0\Projeto de produtos (Exercicio).genruntimeconfig.cache
+C:\Users\44850641822\Desktop\BackEnd\SEMESTRE 1\Projeto de produtos (Exercicio)\obj\Debug\net7.0\ref\Projeto de produtos (Exercicio).dll
