@@ -7,13 +7,16 @@ namespace Projeto_de_produtos__Exercicio_
 {
     public class Marca
     {
-        int codigo { get; set; }
-        string NomeMarca { get; set; }
-        DateTime DataCadastro { get; set; }
-        List<Marca> MarcaLista = new List<Marca>();
+        public int codigo { get; set; }
+        public string NomeMarca { get; set; }
+        public DateTime DataCadastro { get; set; }
+        List<Marca> ListaDeMarcas = new List<Marca>();
         
-        public string CadastrarMarca()
+        public Marca Cadastrar()
         {
+            //instanciar o objeto
+            Marca novaMarca = new Marca();
+
             Console.WriteLine($"Digite a marca do produto: ");
             NomeMarca = Console.ReadLine();
             
@@ -22,25 +25,29 @@ namespace Projeto_de_produtos__Exercicio_
             
             Console.WriteLine($"\n{DataCadastro}");
             
-            return "";
-        }
-        public void adicionar( Marca marca )
-        {
-            MarcaLista.Add(marca);
+            //instanciar o objeto
+            //receber os dados e cadastrar nesse objeto 
+            //armazenar o objeto na lista
+            // retornar o objeto criado
+            return novaMarca;
         }
 
         public void Listar()
         {
-            foreach (Marca M in MarcaLista)
-            {
+            // foreach (Marca M in ListaDeMarcas)
+            // {
                 
-            }
+            // }
+
+            //aqui vai a lógica
+            //exibir os objetos cadastrados na lista
             
         }
-        public void DeletarUsuario()
+        public void Deletar( int codigo )
         {
-            Console.WriteLine($"Marca deletada, cadastre um novo usuário para poder continuar!");
-            CadastrarMarca();
+            //aqui vai a lógica
+            //buscar um objeto na lista pelo seu código
+            //remove-lo
         }
     }
 }

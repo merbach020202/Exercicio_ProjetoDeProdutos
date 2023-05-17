@@ -9,30 +9,139 @@ namespace Projeto_de_produtos__Exercicio_
 {
     public class Login
     {
-        public bool logado { get; set; }
+        public bool logado;
 
         public Login()
         {
+            Usuario user = new Usuario();
+
+            //validar se está logado
+            logar(user);
+
+            if (logado)
+            {
+                GerarMenu();
+            }
+
         }
-        public Login(Usuario usuario)
+
+        public void logar(Usuario usuario)
         {
-            void logar()
+
+            do
             {
-                Console.WriteLine($"Digite se email: ");
-                string NomeDigitado = Console.ReadLine();
+                Console.WriteLine(@$"
+                            LOGIN");
 
-                Console.WriteLine($"Digite sua senha: ");
-                string SenhaDigitada = Console.ReadLine();
+                Console.WriteLine($"Digite seu email: ");
+                string email = Console.ReadLine();
 
-                if (NomeDigitado == usuario.)
+                Console.WriteLine($"\nDigite sua senha: ");
+                string senha = Console.ReadLine();
+
+                if (email == usuario.Email && senha == usuario.Senha)
                 {
-
+                    this.logado = true;
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    Console.WriteLine($"\nLogin efetuado com sucesso!");
+                    Console.ResetColor();
+                    Console.ReadKey();
                 }
-            }
+                else
+                {
+                    this.logado = false;
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine($"\nLogin ou senha incorretos!");
+                    Console.ResetColor();
+                }
+            } while (logado == false);
 
-            void deslogar()
+
+        }
+        public void deslogar(Usuario usuario)
+        {
+            Console.WriteLine($"Usuário deslogado, cadastre um novo usuário para poder continuar!");
+            Console.ReadKey();
+            usuario.Cadastrar();
+        }
+
+        public void GerarMenu()
+        {
+            Produto produto = new Produto();
+            Marca marca = new Marca();
+
+            string opcao;
+
+            do
             {
-            }
+                Console.WriteLine(@$"
+------menu de opções------
+
+[1]- Cadastrar produto
+[2]- Listar produtos
+[3]- Remover produto
+--------------------
+[4]- Cadastrar marca
+[5]- Listar Marcas
+[6]- Remover marca
+--------------------
+[0]- Sair
+");
+
+                opcao = Console.ReadLine();
+
+
+                switch (opcao)
+                {
+                    case "1":
+                        //cadastrar
+                        produto.cadastrar();
+                        break;
+
+                    case "2":
+                        //listar
+                        produto.listar();
+                        break;
+
+                    case "3":
+                        //remover
+                        Console.WriteLine($"Informe o código a ser removido: ");
+                        int CodigoProduto = int.Parse(Console.ReadLine());
+
+                        produto.deletar(CodigoProduto);
+                        break;
+
+                    case "4":
+                        //cadastra
+                        marca.Cadastrar();
+                        break;
+
+                    case "5":
+                        //listar
+                        marca.Listar();
+                        break;
+
+                    case "6":
+                        //remover
+                        Console.WriteLine($"Informe o código a ser removido: ");
+                        int CodigoMarca = int.Parse(Console.ReadLine());
+
+                        produto.deletar(CodigoMarca);
+                        break;
+
+                    case "0":
+                        //remover
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine($"\nApp encerrado!");
+                        Console.ResetColor();
+                        break;
+
+                    default:
+                        Console.WriteLine($"Opção inválida");
+
+                        break;
+                }
+            } while (opcao != "0");
         }
     }
 }
