@@ -50,7 +50,7 @@ namespace Projeto_de_produtos__Exercicio_
             //exibir os objetos cadastrados na lista
 
         }
-        public void Deletar(int codigo)
+        public void deletar(int codigo)
         {
             //aqui vai a lógica
             //buscar um objeto na lista pelo seu código

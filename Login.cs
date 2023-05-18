@@ -119,7 +119,7 @@ namespace Projeto_de_produtos__Exercicio_
                         Console.WriteLine($"Informe o código a ser removido: ");
                         int CodigoMarca = int.Parse(Console.ReadLine());
 
-                        produto.deletar(marca);
+                        marca.deletar();
                         break;
 
                     case "0":
