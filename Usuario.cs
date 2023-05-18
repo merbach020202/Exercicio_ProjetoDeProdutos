@@ -43,11 +43,5 @@ namespace Projeto_de_produtos__Exercicio_
             Console.ReadKey();
             Console.Clear();
         }
-
-        public void DeletarUsuario()
-        {
-            Console.WriteLine($"Usuário deslogado, cadastre ou faça login para poder continuar!");
-            Cadastrar();
-        }
     }
 }

@@ -7,43 +7,50 @@ namespace Projeto_de_produtos__Exercicio_
 {
     public class Marca
     {
-        public int codigo { get; set; }
         public string NomeMarca { get; set; }
+        public int codigo { get; set; }
         public DateTime DataCadastro { get; set; }
         List<Marca> ListaDeMarcas = new List<Marca>();
         
+        //instanciar o objeto
+        //receber os dados e cadastrar nesse objeto 
+        //armazenar o objeto na lista
+        // retornar o objeto criado
         public Marca Cadastrar()
         {
             //instanciar o objeto
-            Marca novaMarca = new Marca();
+            Marca marca = new Marca();
 
-            Console.WriteLine($"Digite a marca do produto: ");
+            //receber os dados e cadastrar nesse objeto
+            Console.WriteLine($"Digite o nome da marca do produto: ");
             NomeMarca = Console.ReadLine();
-            
+
             Console.WriteLine($"\nDigite o código do produto: ");
             codigo = int.Parse(Console.ReadLine());
-            
+
             Console.WriteLine($"\n{DataCadastro}");
-            
-            //instanciar o objeto
-            //receber os dados e cadastrar nesse objeto 
-            //armazenar o objeto na lista
-            // retornar o objeto criado
-            return novaMarca;
+
+            return marca;
         }
+
+        void adicionar(Marca marca)
+        {
+            ListaDeMarcas.Add(marca);
+        }
+
 
         public void Listar()
         {
-            // foreach (Marca M in ListaDeMarcas)
-            // {
+            foreach (Marca M in ListaDeMarcas)
+            {
+                Console.WriteLine($"Marca: ");
                 
-            // }
-
             //aqui vai a lógica
+            }
             //exibir os objetos cadastrados na lista
-            
+
         }
-        public void Deletar( int codigo )
+        public void Deletar(int codigo)
         {
             //aqui vai a lógica
             //buscar um objeto na lista pelo seu código

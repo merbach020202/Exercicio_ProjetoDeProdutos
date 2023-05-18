@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Projeto_de_produtos__Exercicio_;
 
 
+
 namespace Projeto_de_produtos__Exercicio_
 {
     public class Login
@@ -58,12 +59,6 @@ namespace Projeto_de_produtos__Exercicio_
 
 
         }
-        public void deslogar(Usuario usuario)
-        {
-            Console.WriteLine($"Usuário deslogado, cadastre um novo usuário para poder continuar!");
-            Console.ReadKey();
-            usuario.Cadastrar();
-        }
 
         public void GerarMenu()
         {
@@ -74,6 +69,7 @@ namespace Projeto_de_produtos__Exercicio_
 
             do
             {
+                Console.Clear();
                 Console.WriteLine(@$"
 ------menu de opções------
 
@@ -105,10 +101,7 @@ namespace Projeto_de_produtos__Exercicio_
 
                     case "3":
                         //remover
-                        Console.WriteLine($"Informe o código a ser removido: ");
-                        int CodigoProduto = int.Parse(Console.ReadLine());
-
-                        produto.deletar(CodigoProduto);
+                        produto.deletar(produto);                        
                         break;
 
                     case "4":
@@ -126,7 +119,7 @@ namespace Projeto_de_produtos__Exercicio_
                         Console.WriteLine($"Informe o código a ser removido: ");
                         int CodigoMarca = int.Parse(Console.ReadLine());
 
-                        produto.deletar(CodigoMarca);
+                        produto.deletar(marca);
                         break;
 
                     case "0":
