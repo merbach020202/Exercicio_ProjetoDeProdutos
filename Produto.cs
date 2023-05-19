@@ -63,34 +63,13 @@ namespace Projeto_de_produtos__Exercicio_
             //aqui vai a lógica
             //exibir os objetos cadastrados na lista
         }
-        public void deletar(Produto produto)
+        
+        public void remover( int codigo )
         {
-            Console.WriteLine($"Informe o código do produto a ser removido: ");
-            Codigo = int.Parse(Console.ReadLine());
-            
-            ListaDeProdutos.Remove(produto);
-            Console.WriteLine($"Produto {produto} foi removido!");
-            Console.ReadKey();
-
-
-            // if (Codigo == produto.Codigo)
-            // {
-
-            // }
-            // else
-            // {
-            //     Console.WriteLine($"Esse código não foi digitado!");
-
-            // }
-
-            //aqui vai a lógica
-            // buscar um objeto na lista pelo seu código
-            //removê-lo
+            ListaDeProdutos.Find(items => items.Codigo == codigo);
+            Console.WriteLine($"Produto removido : {codigo}");
         }
-
-        internal void deletar(Marca marca)
-        {
-            throw new NotImplementedException();
-        }
+        
     }
 }
+

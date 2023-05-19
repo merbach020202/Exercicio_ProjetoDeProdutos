@@ -101,7 +101,11 @@ namespace Projeto_de_produtos__Exercicio_
 
                     case "3":
                         //remover
-                        produto.deletar(produto);                        
+                        Console.WriteLine($"Informe o código do produto a ser removido: ");
+                        int Codigo = int.Parse(Console.ReadLine());
+
+                        produto.remover(produto.Codigo);
+                        
                         break;
 
                     case "4":
@@ -119,7 +123,7 @@ namespace Projeto_de_produtos__Exercicio_
                         Console.WriteLine($"Informe o código a ser removido: ");
                         int CodigoMarca = int.Parse(Console.ReadLine());
 
-                        marca.deletar();
+                        marca.deletar(CodigoMarca);
                         break;
 
                     case "0":
